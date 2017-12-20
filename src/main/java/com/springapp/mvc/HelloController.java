@@ -23,7 +23,7 @@ public class HelloController {
 	public String popDoc(ModelMap model,@RequestParam(value = "txtDoc",required = true) String txtDoc,
 						HttpServletRequest req, HttpServletResponse resp)throws SecurityException,IOException{
 		model.addAttribute("message", txtDoc);
-		//print result
+		//print result to Output window
 		System.out.println(txtDoc);
 		return "codeRst";
 	}
